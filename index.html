@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1700px">
+    <title>오리온</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="./jpg/파비콘.png">
+    <link rel="stylesheet" href="./css/stlye.css">
+</head>
+<body>
+    <div id="header"><!-- header_s -->
+        <a href="./index.html">
+            <h1><img src="./jpg/로고.png" alt="메인로고"></h1>
+        </a>
+        <div class="gnb_wrap">
+        <ul class="gnb">
+            <li>
+                <a href="#">회사소개</a>
+            </li>
+            <li class="on">
+                <a href="#">사업분야</a>
+            </li>
+            <li >
+                <a href="#">윤리경영</a>
+            </li>
+            <li>
+                <a href="#">투자정보</a>
+            </li>
+            <li>
+                <a href="#">뉴스룸</a>
+            </li>
+            <li>
+                <a href="#">고객센터</a>
+            </li>
+            <li class="off">
+                <a href="#"><img src="./jpg/dr.youmall.png" alt="dr.youmall"></a>
+            </li>
+        </ul>
+        </div>
+            <ul class="id">
+                <li>
+                    <a href="#">English</a>
+                </li>
+                <li>
+                    <a href="#"><img src="./jpg/돋보기.svg" alt="돋보기"></a>
+                </li>
+            </ul>
+    </div>
+    <div id="gnb_wrap"><!-- 아래gnb / 마켓오_s -->
+        <div class="sub_wrap"><!-- 홈/사업분야/ 제과 -->
+            <ul class="sub">
+                <li>
+                  <a href="#">
+            <img src="./jpg/home.png" alt="home">
+        </a>  
+                </li>
+                <li><a href="#">· 사업분야</a></li>
+                <li>· 제과</li>
+            </ul>
+        </div><!-- 홈/사업분야/ 제과_e -->
+    <div class="title"> 
+        <h1>마켓오</h1>
+        <ul class="title_list">
+            <li><a href="#">신제품</a></li>
+            <li><a href="#">파이</a></li>
+            <li><a href="#">스낵</a></li>
+            <li><a href="#">비스킷</a></li>
+            <li><a href="#">캔디</a></li>
+            <li><a href="#">껌</a></li>
+            <li><a href="#">초콜릿</a></li>
+            <li class="red"><a href="#">마켓오</a></li>
+        </ul>
+    </div><!-- title 마켓오/gnb_e-->
+    </div><!-- 아래gnb / 마켓오_e -->
+     <div id="main_wrap"><!-- 상세페이지 이미지 -->
+        <div id="main_left">
+            <img src="./jpg/box.png" alt="">
+            <h1>마켓오 브라우니</h1>
+            <p>갓 구워낸 듯 크러스트가 살아있는 카페스타일 브라우니</p>
+            <div id="text">
+                <ul class="text_sub1">
+                    <li>중량</li>
+                    <li>칼로리</li>
+                    <li>유통기한</li>
+                    <li>알러지 성분</li>
+                </ul>
+                <ul class="text_sub2">
+                    <li>240g</li>
+                    <li>1,020kcal</li>
+                    <li>6개월</li>
+                    <li>밀, 달걀,우유,대</li>
+                </ul>
+        </div>
+       <p>*12개입 기준</p>
+        </div> 
+        <div id="main_right">
+            <h1>제품설명</h1>
+            <p></p>
+        <img src="./jpg/마켓오-브라우니_최종_01.jpg" alt="">
+        <img src="./jpg/마켓오-브라우니_최종_02.jpg" alt="02">
+        </div>
+    </div><!-- main_e -->
+    <div id="footer_wrap">
+        
+        <div id="footer_gnb">
+        <img src="./jpg/로고.png" alt="logo">
+        <ul class="footer">
+            <li>(주)오리온 서울 용산구 백범로 90다길 13 </p>
+                <p><span>사업자등록번호</span> 709-81-00727</p>
+            <p><span>대표이사</span> 이승준</p>
+            </li>
+                <li><p><span>전화번호</span> 02.710.6000</p> <p><span>고객센터</span> 080.023.5700(수신자 부담)</p>
+            </li>
+        </ul>
+        <ul class="right">
+            <li><a href="#">법적고지</a></li>
+            <li class="color"><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">이메일무단수집거부</a></li>
+            <li><a href="#">오시는길</a></li>
+        </ul>
+    </div>
+        <p class="c">COPYRIGHT ORION CORP. ALL RIGHT RESERVED.</p>
+        <div></div>
+    </div>
+    </div>
+    <div id="top_button">
+<img src="./jpg/top_button.png" alt="">
+    </div>
+<script>
+  const topBtn = document.getElementById("top_button");
+
+  // 처음엔 숨김
+  topBtn.style.display = "none";
+
+  // 스크롤 이벤트 감지
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 1000) {   // 300px 이상 내려가면 나타남
+      topBtn.style.display = "block";
+    } else {
+      topBtn.style.display = "none";
+    }
+  });
+
+  // 클릭 시 맨 위로
+  topBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
+</body>
+</html>
