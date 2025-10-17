@@ -241,9 +241,10 @@ font-size: 16px;
     color: #555555;
 }
 #top_button{
-    opacity: 50%;
+     cursor: pointer;
+    transition: opacity 0.3s ease;
     position: fixed;
-    top: 850px;
+    bottom: 30px;
     right: 30px;
 }
 #top_button:hover{
